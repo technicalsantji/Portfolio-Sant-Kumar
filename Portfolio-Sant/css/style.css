@@ -91,7 +91,7 @@ body {
   cursor: pointer;
 }
 
-.header.sticky #darkmode-icon {
+.header.sticky #darkMode-icon {
   color: var(--text-color);
   opacity: 0.9;
 }
@@ -668,7 +668,7 @@ span {
     width: 100%;
   }
   .home .profession-box .profession {
-    padding: 0 13rem;
+    padding: 10 13rem;
     left: auto;
     transform-origin: 0;
   }
@@ -776,7 +776,9 @@ display: none;
     .home .profession-container .profession:nth-child(1) {
         transform: rotate(-90deg) translate(-110px, -210px);
       }
-    
+      .home .profession-container .profession:nth-child(1) i {
+        margin-right: 0;
+      }
       .home .profession-container .profession:nth-child(2) {
         transform: rotate(0deg) translate(5px, -335px);
       }
