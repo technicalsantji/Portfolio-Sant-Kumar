@@ -144,7 +144,7 @@ section {
 .btn {
   display: inline-block;
   padding: 1.2rem 2.8rem;
-  background: var(--main-color);
+  background:rgb(224, 6, 206);
   border-radius: 0.6rem;
   box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
   font-size: 1.6rem;
@@ -156,8 +156,8 @@ section {
 }
 .btn:hover {
   background: transparent;
-  color: var(--main-color);
-  border-color: var(--main-color);
+  color: rgb(224, 6, 206);
+  border-color: rgb(224, 6, 206);;
 }
 .home .profession-container {
   position: absolute;

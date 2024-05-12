@@ -78,11 +78,39 @@ ScrollReveal().reveal('.home-image img,.services-container,.portfolio-box,.testi
 ScrollReveal().reveal('.home-content h1,.about-img img', { origin: 'left' });
 ScrollReveal().reveal('.home-content h3,.home-content p,.about-content p', { origin: 'right' });
 
+
 document.getElementById('contactForm').addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent the default form submission behavior
   
   // Collect form data
   var formData = new FormData(this);
+  
+  // Check if any required field is empty
+  var isFormValid = true;
+  formData.forEach(function(value, key) {
+    if (!value.trim()) { // Check if the field is empty or contains only whitespace
+      isFormValid = false;
+      var fieldName = document.querySelector('[name="' + key + '"]').getAttribute('placeholder');
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: fieldName + ' is required',
+        confirmButtonText: 'OK',
+        showClass: {
+          popup: 'animated fadeInDown faster'
+        },
+        hideClass: {
+          popup: 'animated fadeOutUp faster'
+        }
+      });
+      return; // Exit the loop early
+    }
+  });
+
+  // If form is not valid, don't proceed with form submission
+  if (!isFormValid) {
+    return;
+  }
   
   // Send form data asynchronously using fetch API
   fetch('https://formspree.io/f/mleqvraa', {
@@ -100,8 +128,14 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     Swal.fire({
       icon: 'success',
       title: 'Success',
-      text: 'Form submitted successfully!',
-      confirmButtonText: 'OK'
+      text: 'Form submitted successfully !!',
+      confirmButtonText: 'OK',
+      showClass: {
+        popup: 'animated fadeInDown faster'
+      },
+      hideClass: {
+        popup: 'animated fadeOutUp faster'
+      }
     });
     // You can add additional actions here if needed
   })
@@ -110,11 +144,14 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     Swal.fire({
       icon: 'error',
       title: 'Error',
-      text: 'Error submitting form: ' + error.message,
-      confirmButtonText: 'OK'
+      text: 'Somethings Went Wrong !!',
+      confirmButtonText: 'OK',
+      showClass: {
+        popup: 'animated fadeInDown faster'
+      },
+      hideClass: {
+        popup: 'animated fadeOutUp faster'
+      }
     });
   });
 });
-
-
-
