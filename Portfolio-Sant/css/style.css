@@ -246,12 +246,13 @@ section {
   border-left: 384px solid transparent;
 }
 .home-image img {
-  position: absolute;
+  position: relative;
   bottom: 0;
-  right: -20px;
+  right: -50%;
+  border-radius: 50%;
   top: 105px;
-  width: 70%;
-  height: 90%;
+  width: 50%;
+  height: 61%;
   pointer-events: none;
 }
 
