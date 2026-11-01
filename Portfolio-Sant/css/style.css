@@ -3912,3 +3912,1321 @@ body.dark-mode .input-field textarea:focus {
             0.01ms !important;
     }
 }
+
+
+/* =========================================================
+   PROFESSIONAL EXPERIENCE
+========================================================== */
+
+.experience {
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent,
+            rgba(108, 77, 246, 0.025),
+            transparent
+        );
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   EXPERIENCE CONTAINER
+========================================================== */
+
+.experience-container {
+
+    width: min(
+        100%,
+        var(--max-width)
+    );
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   EXPERIENCE TIMELINE
+========================================================== */
+
+.experience-timeline {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    padding: 10px 0;
+}
+
+
+/* Vertical timeline line */
+
+.experience-timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    bottom: 0;
+
+    left: 28px;
+
+    width: 2px;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent,
+            var(--primary),
+            var(--secondary),
+            var(--primary),
+            transparent
+        );
+
+    opacity: 0.35;
+}
+
+
+/* =========================================================
+   EXPERIENCE ITEM
+========================================================== */
+
+.experience-item {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 58px minmax(0, 1fr);
+
+    gap: 22px;
+
+    margin-bottom: 45px;
+}
+
+.experience-item:last-child {
+
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   EXPERIENCE MARKER
+========================================================== */
+
+.experience-marker {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    z-index: 3;
+}
+
+
+.experience-dot {
+
+    position: relative;
+
+    width: 20px;
+
+    height: 20px;
+
+    margin-top: 30px;
+
+    border-radius: 50%;
+
+    background: var(--gradient);
+
+    border: 4px solid var(--bg);
+
+    box-shadow:
+        0 0 0 4px rgba(108, 77, 246, 0.14),
+        0 8px 25px rgba(108, 77, 246, 0.28);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+
+.experience-item:hover .experience-dot {
+
+    transform: scale(1.25);
+
+    box-shadow:
+        0 0 0 7px rgba(108, 77, 246, 0.12),
+        0 10px 30px rgba(108, 77, 246, 0.35);
+}
+
+
+/* =========================================================
+   EXPERIENCE CARD
+========================================================== */
+
+.experience-card {
+
+    position: relative;
+
+    padding: 34px;
+
+    border-radius: var(--radius-lg);
+
+    background: var(--card);
+
+    border:
+        1px solid var(--border);
+
+    box-shadow: var(--shadow-small);
+
+    backdrop-filter: blur(20px);
+
+    -webkit-backdrop-filter: blur(20px);
+
+    overflow: hidden;
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+}
+
+
+/* Decorative gradient */
+
+.experience-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+
+    height: 220px;
+
+    top: -130px;
+
+    right: -100px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(108, 77, 246, 0.12),
+            transparent 70%
+        );
+
+    pointer-events: none;
+
+    transition:
+        transform 0.6s ease;
+}
+
+
+.experience-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 4px;
+
+    height: 70px;
+
+    top: 35px;
+
+    left: 0;
+
+    border-radius: 0 10px 10px 0;
+
+    background: var(--gradient);
+
+    opacity: 0.8;
+}
+
+
+.experience-card:hover {
+
+    transform: translateY(-7px);
+
+    border-color:
+        rgba(108, 77, 246, 0.35);
+
+    box-shadow:
+        0 25px 65px rgba(41, 35, 91, 0.15);
+}
+
+
+.experience-card:hover::before {
+
+    transform: scale(1.8);
+}
+
+
+/* =========================================================
+   EXPERIENCE CARD HEADER
+========================================================== */
+
+.experience-card-header {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    padding-bottom: 22px;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+/* =========================================================
+   COMPANY
+========================================================== */
+
+.experience-company {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    min-width: 0;
+}
+
+
+.experience-icon {
+
+    flex: 0 0 auto;
+
+    width: 58px;
+
+    height: 58px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 16px;
+
+    background: var(--gradient);
+
+    color: var(--white);
+
+    font-size: 2.7rem;
+
+    box-shadow:
+        0 12px 28px rgba(108, 77, 246, 0.25);
+}
+
+
+.experience-label {
+
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: var(--primary);
+
+    font-size: 1.15rem;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+}
+
+
+.experience-company h3 {
+
+    margin-bottom: 4px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size:
+        clamp(1.9rem, 2.5vw, 2.5rem);
+
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    color: var(--text);
+}
+
+
+.experience-company h4 {
+
+    font-size: 1.55rem;
+
+    line-height: 1.5;
+
+    font-weight: 600;
+
+    color: var(--text-light);
+}
+
+
+/* =========================================================
+   DURATION
+========================================================== */
+
+.experience-duration {
+
+    flex: 0 0 auto;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 9px 14px;
+
+    border-radius: 50px;
+
+    background: var(--gradient-soft);
+
+    border:
+        1px solid var(--border);
+
+    color: var(--primary);
+
+    font-size: 1.25rem;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.experience-duration i {
+
+    font-size: 1.7rem;
+}
+
+
+/* =========================================================
+   EXPERIENCE META
+========================================================== */
+
+.experience-meta {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px 25px;
+
+    margin-top: 20px;
+}
+
+
+.experience-meta span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: var(--text-light);
+
+    font-size: 1.25rem;
+
+    font-weight: 500;
+}
+
+
+.experience-meta i {
+
+    color: var(--primary);
+
+    font-size: 1.7rem;
+}
+
+
+/* =========================================================
+   EXPERIENCE DESCRIPTION
+========================================================== */
+
+.experience-description {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 22px;
+}
+
+
+.experience-description p {
+
+    color: var(--text-light);
+
+    font-size: 1.45rem;
+
+    line-height: 1.85;
+}
+
+
+/* =========================================================
+   PROJECTS
+========================================================== */
+
+.experience-projects {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 22px;
+
+    padding: 18px;
+
+    border-radius: 16px;
+
+    background:
+        rgba(108, 77, 246, 0.045);
+
+    border:
+        1px solid var(--border);
+}
+
+
+.project-label {
+
+    display: block;
+
+    margin-bottom: 11px;
+
+    color: var(--text);
+
+    font-size: 1.25rem;
+
+    font-weight: 700;
+}
+
+
+.experience-project-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+.experience-project-tags span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 8px 13px;
+
+    border-radius: 50px;
+
+    background: var(--bg-secondary);
+
+    border:
+        1px solid var(--border);
+
+    color: var(--primary);
+
+    font-size: 1.2rem;
+
+    font-weight: 600;
+
+    transition:
+        transform var(--transition),
+        background var(--transition);
+}
+
+
+.experience-project-tags span:hover {
+
+    transform: translateY(-3px);
+
+    background: var(--gradient-soft);
+}
+
+
+.experience-project-tags i {
+
+    font-size: 1.5rem;
+}
+
+
+/* =========================================================
+   RESPONSIBILITIES
+========================================================== */
+
+.experience-responsibilities {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 25px;
+}
+
+
+.experience-responsibilities h5 {
+
+    margin-bottom: 15px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1.5rem;
+
+    font-weight: 700;
+
+    color: var(--text);
+}
+
+
+.experience-responsibilities ul {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.experience-responsibilities li {
+
+    display: grid;
+
+    grid-template-columns: 22px minmax(0, 1fr);
+
+    gap: 9px;
+
+    align-items: flex-start;
+
+    color: var(--text-light);
+
+    font-size: 1.35rem;
+
+    line-height: 1.75;
+}
+
+
+.experience-responsibilities li i {
+
+    margin-top: 4px;
+
+    color: var(--primary);
+
+    font-size: 1.65rem;
+}
+
+
+/* =========================================================
+   TECHNOLOGY TAGS
+========================================================== */
+
+.experience-technologies {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid var(--border);
+}
+
+
+.experience-technologies span {
+
+    padding: 6px 11px;
+
+    border-radius: 50px;
+
+    background: var(--gradient-soft);
+
+    border:
+        1px solid var(--border);
+
+    color: var(--primary);
+
+    font-size: 1.1rem;
+
+    font-weight: 700;
+
+    transition:
+        transform var(--transition);
+}
+
+
+.experience-technologies span:hover {
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   EXPERIENCE SUMMARY
+========================================================== */
+
+.experience-summary {
+
+    width: min(
+        100%,
+        1050px
+    );
+
+    margin: 50px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        auto minmax(0, 1fr) auto;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 25px 28px;
+
+    border-radius: 22px;
+
+    background: var(--gradient-soft);
+
+    border:
+        1px solid var(--border);
+
+    box-shadow: var(--shadow-small);
+}
+
+
+.summary-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 15px;
+
+    background: var(--gradient);
+
+    color: white;
+
+    font-size: 2.5rem;
+}
+
+
+.summary-content strong {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1.5rem;
+
+    line-height: 1.4;
+}
+
+
+.summary-content p {
+
+    color: var(--text-light);
+
+    font-size: 1.25rem;
+
+    line-height: 1.6;
+}
+
+
+.summary-badge {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    padding-left: 20px;
+
+    border-left:
+        1px solid var(--border);
+}
+
+
+.summary-badge span {
+
+    color: var(--text-light);
+
+    font-size: 1.1rem;
+
+    font-weight: 600;
+}
+
+
+.summary-badge strong {
+
+    color: var(--primary);
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1.45rem;
+
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================== */
+
+body.dark-mode .experience-card {
+
+    background:
+        rgba(18, 21, 40, 0.78);
+}
+
+
+body.dark-mode .experience-project-tags span {
+
+    background:
+        rgba(18, 21, 40, 0.8);
+}
+
+
+/* =========================================================
+   LARGE TABLET
+========================================================== */
+
+@media (max-width: 1024px) {
+
+    .experience-card {
+
+        padding: 28px;
+    }
+
+    .experience-card-header {
+
+        gap: 18px;
+    }
+
+    .experience-duration {
+
+        font-size: 1.15rem;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .experience {
+
+        padding-left: 20px;
+
+        padding-right: 20px;
+    }
+
+
+    .experience-timeline {
+
+        padding-top: 5px;
+    }
+
+
+    .experience-timeline::before {
+
+        left: 17px;
+    }
+
+
+    .experience-item {
+
+        grid-template-columns: 36px minmax(0, 1fr);
+
+        gap: 14px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .experience-dot {
+
+        width: 17px;
+
+        height: 17px;
+
+        margin-top: 25px;
+
+        border-width: 3px;
+    }
+
+
+    .experience-card {
+
+        padding: 24px 20px;
+
+        border-radius: 20px;
+    }
+
+
+    .experience-card::after {
+
+        top: 28px;
+
+        height: 55px;
+    }
+
+
+    .experience-card-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+
+    .experience-company {
+
+        width: 100%;
+    }
+
+
+    .experience-icon {
+
+        width: 52px;
+
+        height: 52px;
+
+        font-size: 2.4rem;
+    }
+
+
+    .experience-company h3 {
+
+        font-size: 2rem;
+    }
+
+
+    .experience-company h4 {
+
+        font-size: 1.4rem;
+    }
+
+
+    .experience-duration {
+
+        font-size: 1.15rem;
+
+        padding: 8px 12px;
+    }
+
+
+    .experience-meta {
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+
+    .experience-summary {
+
+        grid-template-columns:
+            auto minmax(0, 1fr);
+
+        padding: 22px;
+
+        gap: 15px;
+    }
+
+
+    .summary-badge {
+
+        grid-column: 1 / -1;
+
+        align-items: flex-start;
+
+        padding-left: 0;
+
+        padding-top: 15px;
+
+        border-left: 0;
+
+        border-top:
+            1px solid var(--border);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 576px) {
+
+    .experience {
+
+        padding-top: 80px;
+
+        padding-bottom: 70px;
+    }
+
+
+    .experience-timeline::before {
+
+        left: 13px;
+    }
+
+
+    .experience-item {
+
+        grid-template-columns: 28px minmax(0, 1fr);
+
+        gap: 10px;
+    }
+
+
+    .experience-dot {
+
+        width: 15px;
+
+        height: 15px;
+
+        margin-top: 22px;
+
+        border-width: 3px;
+    }
+
+
+    .experience-card {
+
+        padding: 22px 17px;
+
+        border-radius: 18px;
+    }
+
+
+    .experience-card::after {
+
+        width: 3px;
+
+        top: 24px;
+
+        height: 50px;
+    }
+
+
+    .experience-company {
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+
+    .experience-icon {
+
+        width: 46px;
+
+        height: 46px;
+
+        flex: 0 0 46px;
+
+        border-radius: 13px;
+
+        font-size: 2.1rem;
+    }
+
+
+    .experience-label {
+
+        font-size: 1rem;
+
+        letter-spacing: 1px;
+    }
+
+
+    .experience-company h3 {
+
+        font-size: 1.75rem;
+
+        line-height: 1.35;
+    }
+
+
+    .experience-company h4 {
+
+        font-size: 1.3rem;
+
+        line-height: 1.45;
+    }
+
+
+    .experience-duration {
+
+        width: 100%;
+
+        justify-content: center;
+
+        padding: 8px 10px;
+
+        font-size: 1.1rem;
+    }
+
+
+    .experience-duration i {
+
+        font-size: 1.5rem;
+    }
+
+
+    .experience-description {
+
+        margin-top: 18px;
+    }
+
+
+    .experience-description p {
+
+        font-size: 1.3rem;
+
+        line-height: 1.75;
+    }
+
+
+    .experience-projects {
+
+        padding: 15px;
+
+        margin-top: 18px;
+    }
+
+
+    .experience-project-tags {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .experience-project-tags span {
+
+        width: 100%;
+
+        justify-content: flex-start;
+
+        font-size: 1.1rem;
+    }
+
+
+    .experience-responsibilities {
+
+        margin-top: 20px;
+    }
+
+
+    .experience-responsibilities h5 {
+
+        font-size: 1.35rem;
+    }
+
+
+    .experience-responsibilities ul {
+
+        gap: 10px;
+    }
+
+
+    .experience-responsibilities li {
+
+        grid-template-columns: 19px minmax(0, 1fr);
+
+        gap: 7px;
+
+        font-size: 1.2rem;
+
+        line-height: 1.7;
+    }
+
+
+    .experience-responsibilities li i {
+
+        font-size: 1.4rem;
+    }
+
+
+    .experience-technologies {
+
+        gap: 6px;
+
+        margin-top: 20px;
+
+        padding-top: 17px;
+    }
+
+
+    .experience-technologies span {
+
+        padding: 5px 9px;
+
+        font-size: 1rem;
+    }
+
+
+    .experience-summary {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 20px;
+
+        margin-top: 35px;
+    }
+
+
+    .summary-icon {
+
+        width: 48px;
+
+        height: 48px;
+
+        font-size: 2.1rem;
+    }
+
+
+    .summary-content strong {
+
+        font-size: 1.35rem;
+    }
+
+
+    .summary-content p {
+
+        font-size: 1.15rem;
+    }
+
+
+    .summary-badge {
+
+        width: 100%;
+
+        padding-top: 14px;
+
+        margin-top: 2px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 380px) {
+
+    .experience-item {
+
+        grid-template-columns: 22px minmax(0, 1fr);
+
+        gap: 8px;
+    }
+
+
+    .experience-timeline::before {
+
+        left: 10px;
+    }
+
+
+    .experience-dot {
+
+        width: 13px;
+
+        height: 13px;
+    }
+
+
+    .experience-card {
+
+        padding: 18px 14px;
+    }
+
+
+    .experience-company h3 {
+
+        font-size: 1.6rem;
+    }
+
+
+    .experience-company h4 {
+
+        font-size: 1.2rem;
+    }
+
+
+    .experience-description p,
+
+    .experience-responsibilities li {
+
+        font-size: 1.15rem;
+    }
+
+}
+
