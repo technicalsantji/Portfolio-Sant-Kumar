@@ -1,297 +1,1345 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Sant Kumar</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- swiper css -->
+    <meta name="description"
+          content="Sant Kumar - Java Full Stack Developer Portfolio. Explore projects, services, skills and contact information.">
+
+    <meta name="author" content="TechnicalSantji">
+
+    <title>Sant Kumar | Java Full Stack Developer</title>
+
+    <!-- =========================
+         Google Font
+    ========================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
 
-  <!-- Include SweetAlert CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-
-
-
-    <!-- box icons -->
+    <!-- =========================
+         Boxicons
+    ========================== -->
     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet"
+    >
 
-  <div>
-    <!-- header design -->
-    <header class="header">
-      <a href="#" class="logo">Portfolio</a>
-      <nav class="navbar">
+    <!-- =========================
+         Swiper CSS
+    ========================== -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    >
+
+    <!-- =========================
+         SweetAlert CSS
+    ========================== -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    >
+
+    <!-- =========================
+         Custom CSS
+    ========================== -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     PAGE LOADER
+========================== -->
+<div class="page-loader">
+    <div class="loader-ring"></div>
+    <p>Loading Portfolio...</p>
+</div>
+
+
+<!-- =========================
+     HEADER
+========================== -->
+<header class="header">
+
+    <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>
+        Technical<span>Santji</span>
+        <span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <nav class="navbar">
+
         <a href="#home" class="active">Home</a>
+
         <a href="#about">About</a>
+
         <a href="#services">Services</a>
+
         <a href="#portfolio">Projects</a>
+
+        <a href="#testimonials">Testimonials</a>
+
         <a href="#contact">Contact</a>
-      </nav>
 
-      <div class="bx bx-moon bx-flip-horizontal" id="darkMode-icon"></div>
-      <div class="bx bx-menu" id="menu-icon">
+    </nav>
 
-      </div>
-    </header>
+    <div class="header-actions">
 
-    <!-- home section design -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <h3>Hello,I am</h3>
-        <h1>Sant Kumar</h1>
-        <p>
-          With one year of hands-on experience as a Java Full Stack Developer, 
-          I bring a versatile skill set encompassing proficiency in Java, Angular, 
-          Postgres , mongodb,React, Redux and Spring Boot, Microservice, Kafka. 
-          Seamlessly bridging the gap between front-end and back-end development, 
-          I excel in handling databases and integrating APIs. Recognized for collaborating with high-performing teams, 
-          I am eager to continue my professional growth, leveraging my skills to create 
-          exceptional web applications and embracing new challenges in my next role.
+        <button
+            type="button"
+            class="icon-btn"
+            id="darkMode-icon"
+            aria-label="Toggle dark mode"
+        >
+            <i class="bx bx-moon"></i>
+        </button>
+
+        <button
+            type="button"
+            class="icon-btn menu-toggle"
+            id="menu-icon"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            <i class="bx bx-menu"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     MAIN
+========================== -->
+<main>
+
+<!-- =========================
+     HOME SECTION
+========================== -->
+<section class="home section" id="home">
+
+    <!-- Animated background -->
+    <div class="hero-bg">
+
+        <span class="gradient-blob blob-one"></span>
+
+        <span class="gradient-blob blob-two"></span>
+
+        <span class="gradient-blob blob-three"></span>
+
+        <span class="floating-dot dot-one"></span>
+        <span class="floating-dot dot-two"></span>
+        <span class="floating-dot dot-three"></span>
+
+    </div>
+
+
+    <div class="home-content">
+
+        <div class="available-badge">
+            <span class="status-dot"></span>
+            Available for opportunities
+        </div>
+
+        <p class="hero-intro">
+            Hello, I'm
         </p>
 
+        <h1>
+            Sant <span>Kumar</span>
+        </h1>
+
+        <h2>
+            <span class="typing-text">Java Full Stack Developer</span>
+        </h2>
+
+        <p class="hero-description">
+            I build scalable, secure and responsive web applications using
+            Java, Spring Boot, Angular, React, databases and modern
+            software development practices.
+        </p>
+
+
+        <!-- Social Links -->
         <div class="social-media">
-          <a href="https://m.facebook.com/Technicalsantji"><i class="bx bxl-facebook"></i></a>
-          <a href="https://twitter.com/Technicalsantji"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.instagram.com/Technicalsantji/"><i class="bx bxl-instagram-alt"></i></a>
-          <a href="https://www.linkedin.com/in/technicalsantj/"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/technicalsantji"><i class="bx bxl-github"></i></a>
+
+            <a
+                href="https://m.facebook.com/Technicalsantji"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+            >
+                <i class="bx bxl-facebook"></i>
+            </a>
+
+            <a
+                href="https://twitter.com/Technicalsantji"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+            >
+                <i class="bx bxl-twitter"></i>
+            </a>
+
+            <a
+                href="https://www.instagram.com/Technicalsantji/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+            >
+                <i class="bx bxl-instagram-alt"></i>
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/technicalsantj/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+            >
+                <i class="bx bxl-linkedin"></i>
+            </a>
+
+            <a
+                href="https://github.com/technicalsantji"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+            >
+                <i class="bx bxl-github"></i>
+            </a>
+
         </div>
 
-        <a  href="https://drive.google.com/uc?export=download&id=1ZT8FwKOynVykHumGKEkpbckXJsfL1HyR" class="btn">Download CV</a>
-      </div>
-      <div class="profession-container">
-        <div class="profession-box">
-          <div class="profession" style="--i: 1">
-            <i class='bx bxl-java bx-tada bx-rotate-180' ></i>
-            <h3>Java Developer</h3>
-          </div>
-          <div class="profession" style="--i: 2">
-            <i class="bx bx-camera"></i>
-            <h3>Photographer</h3>
-          </div>
-          <div class="profession" style="--i: 3">
-            <i class="bx bx-palette"></i>
-            <h3>Web Designer</h3>
-          </div>
-          <div class="profession" style="--i: 4">
-            <i class="bx bx-code-alt"></i>
-            <h3>Web Developer</h3>
-          </div>
-          <div class="circle"></div>
-        </div>
-        <div class="overlay"></div>
-        <div class="home-image"><img src="images/about.png" /></div>
-      </div>
-    </section>
 
-    <!-- about section design -->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="images/about.png" alt="" />
-      </div>
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Hi,I'm a Software Engineer</h3>
+        <!-- Buttons -->
+        <div class="hero-buttons">
+
+            <a
+                href="https://drive.google.com/uc?export=download&id=1R_KO-o022nj-aPadZwPQzMvfd93SzUqa"
+                class="btn primary-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="bx bx-download"></i>
+                Download CV
+            </a>
+
+            <a href="#contact" class="btn secondary-btn">
+                Let's Talk
+                <i class="bx bx-right-arrow-alt"></i>
+            </a>
+
+        </div>
+
+
+        <!-- Quick Stats -->
+        <div class="hero-stats">
+
+            <div class="stat">
+                <strong>Java</strong>
+                <span>Backend</span>
+            </div>
+
+            <div class="stat">
+                <strong>Angular</strong>
+                <span>Frontend</span>
+            </div>
+
+            <div class="stat">
+                <strong>Spring</strong>
+                <span>Framework</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         HERO IMAGE AREA
+    ========================== -->
+    <div class="home-visual">
+
+        <div class="visual-glow"></div>
+
+        <div class="profile-ring ring-one"></div>
+
+        <div class="profile-ring ring-two"></div>
+
+        <div class="profile-card">
+
+            <div class="profile-image-wrapper">
+
+                <img
+                    src="images/about.jpeg"
+                    alt="Sant Kumar - Java Full Stack Developer"
+                    class="profile-image"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- Floating skill cards -->
+
+        <div class="floating-card java-card">
+
+            <i class="bx bxl-java"></i>
+
+            <div>
+                <strong>Java</strong>
+                <span>Backend</span>
+            </div>
+
+        </div>
+
+
+        <div class="floating-card angular-card">
+
+            <i class="bx bxl-angular"></i>
+
+            <div>
+                <strong>Angular</strong>
+                <span>Frontend</span>
+            </div>
+
+        </div>
+
+
+        <div class="floating-card spring-card">
+
+            <i class="bx bx-leaf"></i>
+
+            <div>
+                <strong>Spring Boot</strong>
+                <span>API</span>
+            </div>
+
+        </div>
+
+
+        <div class="scroll-indicator">
+
+            <i class="bx bx-mouse"></i>
+
+            <span>Scroll Down</span>
+
+            <i class="bx bx-chevron-down"></i>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT SECTION
+========================== -->
+<section class="about section" id="about">
+
+    <div class="section-container about-container">
+
+        <div class="about-image reveal-left">
+
+            <div class="image-frame">
+
+                <div class="image-decoration"></div>
+
+                <img
+                    src="images/about.jpeg"
+                    alt="Sant Kumar"
+                >
+
+            </div>
+
+            <div class="experience-badge">
+
+                <i class="bx bx-code-alt"></i>
+
+                <div>
+                    <strong>Full Stack</strong>
+                    <span>Development</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-content reveal-right">
+
+            <span class="section-subtitle">
+                Discover My Story
+            </span>
+
+            <h2 class="heading">
+                About <span>Me</span>
+            </h2>
+
+            <h3>
+                Software Engineer & Java Full Stack Developer
+            </h3>
+
+            <p>
+                I've immersed myself in the dynamic realms of Java and
+                Angular development, building robust and efficient
+                solutions for modern web applications.
+            </p>
+
+            <p>
+                My backend experience includes Java, Spring Boot, Spring
+                Security, JPA, REST APIs, PostgreSQL, MySQL and MongoDB.
+                On the frontend, I work with Angular, React, JavaScript,
+                HTML and CSS to create responsive user interfaces.
+            </p>
+
+            <p>
+                I enjoy solving technical problems, learning new
+                technologies and creating applications that are reliable,
+                scalable and easy to use.
+            </p>
+
+
+            <div class="skills-list">
+
+                <span>
+                    <i class="bx bx-check"></i>
+                    Java
+                </span>
+
+                <span>
+                    <i class="bx bx-check"></i>
+                    Spring Boot
+                </span>
+
+                <span>
+                    <i class="bx bx-check"></i>
+                    Angular
+                </span>
+
+                <span>
+                    <i class="bx bx-check"></i>
+                    React
+                </span>
+
+                <span>
+                    <i class="bx bx-check"></i>
+                    PostgreSQL
+                </span>
+
+                <span>
+                    <i class="bx bx-check"></i>
+                    MongoDB
+                </span>
+
+            </div>
+
+            <a href="#services" class="btn primary-btn">
+                Explore My Skills
+                <i class="bx bx-right-arrow-alt"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES SECTION
+========================== -->
+<section class="services section" id="services">
+
+    <div class="section-heading">
+
+        <span class="section-subtitle">
+            What I Do
+        </span>
+
+        <h2 class="heading">
+            My <span>Services</span>
+        </h2>
+
         <p>
-          I've immersed myself in the dynamic realms of Java and Angular development, crafting robust and efficient solutions. In Java, I've honed my skills in building scalable backend systems, leveraging frameworks like Spring and Hibernate to streamline processes and enhance performance. Concurrently, my journey with Angular has seen me designing sleek, interactive user interfaces, utilizing Angular Material and RxJS to deliver seamless experiences across various platforms. Through collaboration and continuous learning, I've tackled diverse challenges, from optimizing database queries to implementing responsive front-end designs. My year-long adventure has fortified my expertise, making me a versatile and adept developer.
+            I develop modern, secure and responsive applications
+            from backend APIs to complete user interfaces.
         </p>
 
-        <a href="" class="btn">Read More</a>
-      </div>
-    </section>
-
-    <!-- services section design -->
-
-    <section class="services" id="services">
-      <h2 class="heading">My<span> Services</span></h2>
-      <div class="services-container">
-        <div class="service-box">
-          <i class="bx bx-code"></i>
-          <h3>Java Full Stack Developer</h3>
-          <p>
-            A Java Full Stack Developer proficient in frameworks like Spring Boot for backend development and Angular for frontend. 
-            They excel in building robust, scalable web applications, leveraging Java's versatility across the entire software stack, 
-            from server-side logic to client-side interfaces, ensuring seamless functionality and user experience.
-
-          </p>
-          <a href="" class="btn">Read More</a>
-        </div>
-        <div class="service-box">
-          <i class="bx bxs-paint"></i>
-          <h3>Backend Developer</h3>
-          <p>
-            Experienced backend developer proficient in Java, Spring Boot, JPA, Spring Security, Spring Cloud, 
-            PostgreSQL, MySQL, MongoDB. Specialize in building robust RESTful APIs. Strong in database management and cloud integration.
-             Ready to deliver scalable solutions with seamless security measures.
-          </p>
-          <a href="" class="btn">Read More</a>
-        </div>
-        <div class="service-box">
-          <i class="bx bx-bar-chart-alt"></i>
-          <h3>Frontend Developer</h3>
-          <p>
-           
-Skilled frontend developer with expertise in HTML, CSS, JavaScript, Angular, and React.
- Proficient in crafting intuitive user interfaces and responsive designs. Experienced in 
- building dynamic web applications to enhance user experiences. 
-Ready to create engaging and interactive frontend solutions.
-          </p>
-          <a href="" class="btn">Read More</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- portfolio section design -->
-
-    <section class="portfolio" id="portfolio">
-      <h2 class="heading">Latest <span>Project</span></h2>
-      <div class="portfolio-container">
-
-        <div class="portfolio-box">
-          <img src="images/portfolio1.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>Content Detection</h4>
-            <p>
-             Use :- Java,Spring Boot,Spring Security,Hibernate,JPA,API,Angular,Material UI,PostgresSQL
-            </p>
-            <a href="https://github.com/technicalsantji/SpringBooAndAngular_Combine_Projects"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-        <div class="portfolio-box">
-          <img src="images/portfolio1.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>Real Chat Application</h4>
-            <p>
-           Use :- Java,Web Socket Api,HTML,CSS,JavaScript,Json,JQuery,Ajax
-            </p>
-            <a href="https://github.com/technicalsantji/RealChat_App"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-        <div class="portfolio-box">
-          <img src="images/portfolio2.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>Vehicle Management</h4>
-            <p>
-            Use:-  HTML,CSS JavaScript,PHP,SCSS,Hack,MYSQL
-            </p>
-            <a href="https://github.com/technicalsantji/Vehicle-management-project"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-        <div class="portfolio-box">
-          <img src="images/portfolio3.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>Tech Blog Post</h4>
-            <p>
-            Use :- HTML,CSS,JavaScript,Java,Jsp,Servlet,MYSQL
-            </p>
-            <a href="https://github.com/technicalsantji/Tech-Blog-Post"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-        <div class="portfolio-box">
-          <img src="images/portfolio4.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>Ecommerce</h4>
-            <p>
-           Use :- Java,jsp,JDBC,,MySQL,HTML,CSS,JavaScript
-            </p>
-            <a href="https://github.com/technicalsantji/E-Commerce-Project"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-        <div class="portfolio-box">
-          <img src="images/portfolio5.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>Online-Shopping</h4>
-            <p>
-           USe :- Java,Servlet,JSP,JDBC,MYSQL,HTML,CSS,JavaScript
-            </p>
-            <a href="https://github.com/technicalsantji/Online-Shopping-"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-      
-
-    </div>
-    </section>
-
-  
-
-    <!-- testimonial design -->
-     <div class="testimonial-container">
-      <h2 class="heading">Valuable <span>Testimonial</span></h2>
-    
-      <div class="testimonial-wrapper ">
-      <div class="testimonial-box mySwiper">
-        <div class="testimonial-content swiper-wrapper">
-          <div class="testimonial-slide swiper-slide">
-            <img src="images/testimonial2.jpg" alt="">
-          <h3>Sant Kumar</h3>
-
-          <p>Exceptional problem solver and team player. Always delivers high-quality code on time, even under tight deadlines with finesse and precision. - Sant Kumar ,Java Full Stack Developer.          
-          </p>  </div>
-         <div class="testimonial-slide swiper-slide">
-          <img src="images/testimonial1.jpg" alt="">
-        <h3>Sant Kumar</h3>
-        <p>Highly skilled in both front-end and back-end development. Consistently impressed with their ability to adapt to new technologies and find innovative solutions. - Sant Kumar, Full Stack Developer.</p>
-        
-       </div>
-       <div class="testimonial-slide swiper-slide">
-        <img src="images/testimonial2.jpg" alt="">
-      <h3>Sant Kumar</h3>
-      <p>Consistently exceeds expectations. From designing user interfaces to optimizing database performance, they consistently deliver results that exceed client expectations. - Sant Kumar, UI/UX Designer    
-      </p>   </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-     </div>
     </div>
 
-    <!-- contact section design -->
 
-     <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me!</span></h2>
-   
-          <form action="https://formspree.io/f/mleqvraa" method="POST" id="contactForm">
-          <div class="input-box">
-            <input type="text" id="fullName" name="fullName" placeholder="Full Name">
-            <input type="email" id="email" name="email" placeholder="Email Address">
-          </div>
-          <div class="input-box">
-            <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Mobile Number">
-            <input type="text" id="emailSubject" name="emailSubject" placeholder="Email Subject">
-          </div>
-          <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-          <input type="submit" class="btn" value="Send Message">
-      </form>
-      
-     </section>
-    <!-- footer design -->
-     <footer class="footer">
-      <div class="footer-text">
-        <p>Copyright &copy; 2023 by TechnicalSantji | All Right Reserved</p>
-      </div>
-      <div class="footer-iconTop">
-        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-      </div>
-     </footer>
-   <!-- Include SweetAlert JavaScript -->
-     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <div class="services-container">
 
-    <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <!-- Service 1 -->
+        <article class="service-box reveal-up">
 
-    <!-- custom js -->
-    <script src="js/script.js"></script>
-  </body>
+            <div class="service-icon">
+                <i class="bx bx-code-alt"></i>
+            </div>
+
+            <h3>
+                Java Full Stack Development
+            </h3>
+
+            <p>
+                Building complete web applications using Java,
+                Spring Boot, Angular, React, REST APIs and databases.
+            </p>
+
+            <a href="#contact" class="service-link">
+                Let's Build
+                <i class="bx bx-right-arrow-alt"></i>
+            </a>
+
+        </article>
+
+
+        <!-- Service 2 -->
+        <article class="service-box reveal-up">
+
+            <div class="service-icon">
+                <i class="bx bx-server"></i>
+            </div>
+
+            <h3>
+                Backend Development
+            </h3>
+
+            <p>
+                Developing secure and scalable backend systems using
+                Java, Spring Boot, JPA, Spring Security, Spring Cloud
+                and RESTful APIs.
+            </p>
+
+            <a href="#contact" class="service-link">
+                Let's Build
+                <i class="bx bx-right-arrow-alt"></i>
+            </a>
+
+        </article>
+
+
+        <!-- Service 3 -->
+        <article class="service-box reveal-up">
+
+            <div class="service-icon">
+                <i class="bx bx-devices"></i>
+            </div>
+
+            <h3>
+                Frontend Development
+            </h3>
+
+            <p>
+                Creating responsive and interactive user interfaces
+                using HTML, CSS, JavaScript, Angular and React.
+            </p>
+
+            <a href="#contact" class="service-link">
+                Let's Build
+                <i class="bx bx-right-arrow-alt"></i>
+            </a>
+
+        </article>
+
+
+        <!-- Service 4 -->
+        <article class="service-box reveal-up">
+
+            <div class="service-icon">
+                <i class="bx bx-data"></i>
+            </div>
+
+            <h3>
+                Database Solutions
+            </h3>
+
+            <p>
+                Working with PostgreSQL, MySQL and MongoDB to design
+                efficient data models and reliable database solutions.
+            </p>
+
+            <a href="#contact" class="service-link">
+                Let's Build
+                <i class="bx bx-right-arrow-alt"></i>
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROJECTS SECTION
+========================== -->
+<section class="portfolio section" id="portfolio">
+
+    <div class="section-heading">
+
+        <span class="section-subtitle">
+            My Recent Work
+        </span>
+
+        <h2 class="heading">
+            Latest <span>Projects</span>
+        </h2>
+
+        <p>
+            Some of my development projects using Java,
+            Spring Boot, Angular, React, databases and web technologies.
+        </p>
+
+    </div>
+
+
+    <div class="portfolio-container">
+
+
+        <!-- Project 1 -->
+        <article class="portfolio-box reveal-up">
+
+            <img
+                src="images/portfolio1.jpg"
+                alt="Content Detection Project"
+                loading="lazy"
+            >
+
+            <div class="portfolio-layer">
+
+                <span class="project-number">
+                    01
+                </span>
+
+                <h3>
+                    Content Detection
+                </h3>
+
+                <p>
+                    Java, Spring Boot, Spring Security, Hibernate,
+                    JPA, REST API, Angular, Material UI and PostgreSQL.
+                </p>
+
+                <div class="project-tech">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>Angular</span>
+                </div>
+
+                <a
+                    href="https://github.com/technicalsantji/SpringBooAndAngular_Combine_Projects"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open Content Detection project"
+                >
+                    <i class="bx bx-link-external"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Project 2 -->
+        <article class="portfolio-box reveal-up">
+
+            <img
+                src="images/portfolio1.jpg"
+                alt="Real Chat Application"
+                loading="lazy"
+            >
+
+            <div class="portfolio-layer">
+
+                <span class="project-number">
+                    02
+                </span>
+
+                <h3>
+                    Real Chat Application
+                </h3>
+
+                <p>
+                    Real-time chat application using Java,
+                    WebSocket API, HTML, CSS, JavaScript, JSON,
+                    jQuery and AJAX.
+                </p>
+
+                <div class="project-tech">
+                    <span>Java</span>
+                    <span>WebSocket</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <a
+                    href="https://github.com/technicalsantji/RealChat_App"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open Real Chat project"
+                >
+                    <i class="bx bx-link-external"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Project 3 -->
+        <article class="portfolio-box reveal-up">
+
+            <img
+                src="images/portfolio2.jpg"
+                alt="Vehicle Management Project"
+                loading="lazy"
+            >
+
+            <div class="portfolio-layer">
+
+                <span class="project-number">
+                    03
+                </span>
+
+                <h3>
+                    Vehicle Management
+                </h3>
+
+                <p>
+                    Vehicle management application using HTML,
+                    CSS, JavaScript, PHP, SCSS and MySQL.
+                </p>
+
+                <div class="project-tech">
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <a
+                    href="https://github.com/technicalsantji/Vehicle-management-project"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open Vehicle Management project"
+                >
+                    <i class="bx bx-link-external"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Project 4 -->
+        <article class="portfolio-box reveal-up">
+
+            <img
+                src="images/portfolio3.jpg"
+                alt="Tech Blog Project"
+                loading="lazy"
+            >
+
+            <div class="portfolio-layer">
+
+                <span class="project-number">
+                    04
+                </span>
+
+                <h3>
+                    Tech Blog Post
+                </h3>
+
+                <p>
+                    Technology blog application using HTML, CSS,
+                    JavaScript, Java, JSP, Servlet and MySQL.
+                </p>
+
+                <div class="project-tech">
+                    <span>Java</span>
+                    <span>JSP</span>
+                    <span>MySQL</span>
+                </div>
+
+                <a
+                    href="https://github.com/technicalsantji/Tech-Blog-Post"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open Tech Blog project"
+                >
+                    <i class="bx bx-link-external"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Project 5 -->
+        <article class="portfolio-box reveal-up">
+
+            <img
+                src="images/portfolio4.jpg"
+                alt="Ecommerce Project"
+                loading="lazy"
+            >
+
+            <div class="portfolio-layer">
+
+                <span class="project-number">
+                    05
+                </span>
+
+                <h3>
+                    Ecommerce
+                </h3>
+
+                <p>
+                    Ecommerce application using Java, JSP, JDBC,
+                    MySQL, HTML, CSS and JavaScript.
+                </p>
+
+                <div class="project-tech">
+                    <span>Java</span>
+                    <span>JSP</span>
+                    <span>MySQL</span>
+                </div>
+
+                <a
+                    href="https://github.com/technicalsantji/E-Commerce-Project"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open Ecommerce project"
+                >
+                    <i class="bx bx-link-external"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Project 6 -->
+        <article class="portfolio-box reveal-up">
+
+            <img
+                src="images/portfolio5.jpg"
+                alt="Online Shopping Project"
+                loading="lazy"
+            >
+
+            <div class="portfolio-layer">
+
+                <span class="project-number">
+                    06
+                </span>
+
+                <h3>
+                    Online Shopping
+                </h3>
+
+                <p>
+                    Online shopping application using Java,
+                    Servlet, JSP, JDBC, MySQL, HTML, CSS and JavaScript.
+                </p>
+
+                <div class="project-tech">
+                    <span>Java</span>
+                    <span>Servlet</span>
+                    <span>MySQL</span>
+                </div>
+
+                <a
+                    href="https://github.com/technicalsantji/Online-Shopping-"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open Online Shopping project"
+                >
+                    <i class="bx bx-link-external"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TESTIMONIAL SECTION
+========================== -->
+<section class="testimonials section" id="testimonials">
+
+    <div class="section-heading">
+
+        <span class="section-subtitle">
+            What I Believe
+        </span>
+
+        <h2 class="heading">
+            Developer <span>Highlights</span>
+        </h2>
+
+    </div>
+
+
+    <div class="testimonial-wrapper">
+
+        <div class="testimonial-box mySwiper">
+
+            <div class="testimonial-content swiper-wrapper">
+
+
+                <div class="testimonial-slide swiper-slide">
+
+                    <div class="quote-icon">
+                        <i class="bx bxs-quote-alt-left"></i>
+                    </div>
+
+                    <img
+                        src="images/testimonial2.jpg"
+                        alt="Sant Kumar"
+                    >
+
+                    <h3>
+                        Problem Solver
+                    </h3>
+
+                    <p>
+                        Strong focus on solving technical challenges,
+                        writing clean code and continuously improving
+                        development skills.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+
+                <div class="testimonial-slide swiper-slide">
+
+                    <div class="quote-icon">
+                        <i class="bx bxs-quote-alt-left"></i>
+                    </div>
+
+                    <img
+                        src="images/testimonial1.jpg"
+                        alt="Sant Kumar"
+                    >
+
+                    <h3>
+                        Full Stack Mindset
+                    </h3>
+
+                    <p>
+                        Comfortable working across backend and frontend
+                        technologies to build complete web applications.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+
+                <div class="testimonial-slide swiper-slide">
+
+                    <div class="quote-icon">
+                        <i class="bx bxs-quote-alt-left"></i>
+                    </div>
+
+                    <img
+                        src="images/testimonial2.jpg"
+                        alt="Sant Kumar"
+                    >
+
+                    <h3>
+                        Continuous Learning
+                    </h3>
+
+                    <p>
+                        Passionate about learning modern technologies,
+                        improving architecture and creating better
+                        software solutions.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT SECTION
+========================== -->
+<section class="contact section" id="contact">
+
+    <div class="section-heading">
+
+        <span class="section-subtitle">
+            Let's Connect
+        </span>
+
+        <h2 class="heading">
+            Contact <span>Me!</span>
+        </h2>
+
+        <p>
+            Have a project, opportunity or question?
+            Feel free to send me a message.
+        </p>
+
+    </div>
+
+
+    <div class="contact-container">
+
+        <div class="contact-info reveal-left">
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="bx bx-envelope"></i>
+                </div>
+
+                <div>
+                    <span>Email</span>
+                    <strong>
+                        Let's connect through the form
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="bx bx-code-alt"></i>
+                </div>
+
+                <div>
+                    <span>Specialization</span>
+                    <strong>
+                        Java Full Stack Development
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="bx bx-map"></i>
+                </div>
+
+                <div>
+                    <span>Location</span>
+                    <strong>
+                        India
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <div class="contact-socials">
+
+                <a
+                    href="https://github.com/technicalsantji"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                >
+                    <i class="bx bxl-github"></i>
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/technicalsantj/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                >
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+
+                <a
+                    href="https://www.instagram.com/Technicalsantji/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                >
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <form
+            action="https://formspree.io/f/mleqvraa"
+            method="POST"
+            id="contactForm"
+            class="contact-form reveal-right"
+        >
+
+            <div class="input-group">
+
+                <div class="input-field">
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder=" "
+                        autocomplete="name"
+                        required
+                    >
+
+                    <label for="fullName">
+                        Full Name
+                    </label>
+
+                    <i class="bx bx-user"></i>
+
+                </div>
+
+
+                <div class="input-field">
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder=" "
+                        autocomplete="email"
+                        required
+                    >
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <i class="bx bx-envelope"></i>
+
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <div class="input-field">
+
+                    <input
+                        type="tel"
+                        id="mobileNumber"
+                        name="mobileNumber"
+                        placeholder=" "
+                        autocomplete="tel"
+                    >
+
+                    <label for="mobileNumber">
+                        Mobile Number
+                    </label>
+
+                    <i class="bx bx-phone"></i>
+
+                </div>
+
+
+                <div class="input-field">
+
+                    <input
+                        type="text"
+                        id="emailSubject"
+                        name="emailSubject"
+                        placeholder=" "
+                        required
+                    >
+
+                    <label for="emailSubject">
+                        Email Subject
+                    </label>
+
+                    <i class="bx bx-edit"></i>
+
+                </div>
+
+            </div>
+
+
+            <div class="input-field textarea-field">
+
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder=" "
+                    rows="7"
+                    required
+                ></textarea>
+
+                <label for="message">
+                    Your Message
+                </label>
+
+                <i class="bx bx-message-detail"></i>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn primary-btn submit-btn"
+            >
+                <span>Send Message</span>
+                <i class="bx bx-send"></i>
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                Technical<span>Santji</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <p>
+                Java Full Stack Developer building modern,
+                scalable and responsive web applications.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h4>
+                Quick Links
+            </h4>
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#services">Services</a>
+
+            <a href="#portfolio">Projects</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h4>
+                Technologies
+            </h4>
+
+            <span>Java</span>
+
+            <span>Spring Boot</span>
+
+            <span>Angular</span>
+
+            <span>React</span>
+
+            <span>PostgreSQL</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            Copyright &copy; 2026 TechnicalSantji.
+            All Rights Reserved.
+        </p>
+
+        <a href="#home" class="back-top">
+            <i class="bx bx-up-arrow-alt"></i>
+        </a>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     SWEETALERT
+========================== -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<!-- =========================
+     SCROLL REVEAL
+========================== -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+
+<!-- =========================
+     SWIPER
+========================== -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+<!-- =========================
+     CUSTOM JS
+========================== -->
+<script src="js/script.js"></script>
+
+</body>
 </html>
